@@ -3,7 +3,7 @@ def sum (a, b):
 
 
 def pot(a, b):
-  return
+  return a ** b
 
 print(sum(2, 2))
 print(pot(2, 3))
