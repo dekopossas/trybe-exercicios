@@ -11,6 +11,11 @@ def fizzbuzz(numero):
         return "fizz"
     return str(numero)
 
+def fizzbuzz_on(limit):
+    """Aplica o fizzbuzz ate o numero passado no parametros"""
+    for numero in range(1, limit + 1):
+        print(fizzbuzz(numero))
+
 
 assert fizzbuzz(3) == "fizz"
 assert fizzbuzz(5) == "buzz"
