@@ -5,3 +5,6 @@ def fizzbuzz(numero):
     return 'fizz'
 
 assert fizzbuzz(3) == 'fizz'
+assert fizzbuzz(5) == 'buzz'
+assert fizzbuzz(15) == 'fizzbuzz'
+assert fizzbuzz(4) == '4'
