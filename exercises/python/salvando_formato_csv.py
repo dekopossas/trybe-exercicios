@@ -10,16 +10,16 @@ for row in data:
     bathing = row[2]
     if campaign not in bathing_by_campaign:
         bathing_by_campaign[campaign] = {
-            "Própria": 0
-            "Imprópria": 0
-            "Muito boa": 0
-            "indisponível": 0
-            "Satisfatória": 0
+            "Própria": 0,
+            "Imprópria": 0,
+            "Muito Boa": 0,
+            "Indisponível": 0,
+            "Satisfatória": 0,
         }
     bathing_by_campaign[campaign][bathing] += 1
 
-with open("report_por_campanha.csv") as file:
-    write = csv.writer(file)
+with open("report_por_campanha.csv", "w") as file:
+    writer = csv.writer(file)
     headers = [
         "Campana",
         "Própria",
