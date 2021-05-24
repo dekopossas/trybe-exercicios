@@ -4,8 +4,9 @@ from fizzbuzz import fizzbuzz
 
 def pedir_numero():
     """Pede numero e retorna fizzbuzz"""
+    resposta = input("Digite um número inteiro por favor: ")
     try:
-        return int(input("Digite um número inteiro por favor: "))
+        return int(resposta)
     except ValueError:
         print("número invalido")
         return pedir_numero()
