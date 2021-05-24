@@ -9,6 +9,7 @@ def pedir_numero():
         resposta = input("Digite um número inteiro por favor: ")
     except KeyboardInterrupt:
         print("\n deixa quieto")
+        sys.exit()
 
     try:
         return int(resposta)
