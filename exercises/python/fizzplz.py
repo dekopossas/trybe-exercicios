@@ -7,6 +7,7 @@ def pedir_numero():
     try:
         return int(input("Digite um número inteiro por favor: "))
     except ValueError:
+        print("número invalido")
         return pedir_numero()
 
 
