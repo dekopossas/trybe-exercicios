@@ -7,6 +7,8 @@ def chamar (andar):
 
 def ir():
     """Vai para o próximo andar da lista de chamados"""
+    global chamados # usando variavel de fora do escopo
+    global andar # usando variavel de fora do escopo
     if chamados:
         andar = chamados[0]
         chamados = chamados[1:]
