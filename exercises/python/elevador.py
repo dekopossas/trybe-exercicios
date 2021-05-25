@@ -5,12 +5,12 @@ class Elevador:
         self.andar = 0
         self.chamados = []
 
+    def chamar (andar):
+        """adiciona o andar chamado na lista de chamados"""
+        self.chamados.append(andar)
+
 elevador_1:Elevador()
 elevador_2:Elevador()
-
-def chamar (andar):
-    """adiciona o andar chamado na lista de chamados"""
-    chamados.append(andar)
 
 def ir():
     """Vai para o próximo andar da lista de chamados"""
