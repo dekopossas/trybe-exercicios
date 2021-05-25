@@ -14,9 +14,10 @@ def ir():
         chamados = chamados[1:]
 
 chamar(2)
-chamados.append(2)
-chamados = [2]
+chamar(3)
+chamar(0)
 
-andar = 3
 ir()
-andar = chamados[0]
+ir()
+
+assert andar == 3
