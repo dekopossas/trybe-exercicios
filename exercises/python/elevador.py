@@ -1,5 +1,9 @@
-andar = 0
-chamados = []
+
+class Elevador:
+  """Essa classe transforma uma variável em um elevador"""
+    def __init__(self):
+        self.andar = 0
+        self.chamados = []
 
 def chamar (andar):
     """adiciona o andar chamado na lista de chamados"""
