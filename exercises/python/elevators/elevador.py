@@ -18,13 +18,3 @@ class Elevador:
     def localizar(self):
         """ Indica o andar do elevador"""
         return self._andar
-
-elevador_1 = Elevador()
-elevador_2 = Elevador()
-
-elevador_1.chamar(3)
-elevador_1.chamar(4)
-elevador_1.ir()
-elevador_1.ir()
-
-assert elevador_1.localizar() == 4
