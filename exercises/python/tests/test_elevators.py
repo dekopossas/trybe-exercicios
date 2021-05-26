@@ -12,13 +12,14 @@ def test_elevador():
     # assert
     assert elevador.localizar() == 2
 
-def test_elevador_2_sem_chamados():
+def test_elevador_2_atende_chamados():
     # arrange
     elevador = TerreoElevador()
     # act
+    elevador.chamar(3)
     elevador.ir()
     # assert
-    assert elevador.localizar() == 0
+    assert elevador.localizar() == 3
 
 def test_elevador_2_acabou_chamados():
     # arrange
@@ -27,5 +28,5 @@ def test_elevador_2_acabou_chamados():
     elevador.chamar(2)
     elevador.ir()
     elevador.ir()
+    # assert
     assert elevador.localizar() == 0
-    
