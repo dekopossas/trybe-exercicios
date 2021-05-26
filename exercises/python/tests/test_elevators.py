@@ -6,9 +6,9 @@ def test_elevador():
     elevador = Elevador()
     # act
     elevador.chamar(2)
-    elevador.chamar(2)
-    elevador.chamar(2)
-    elevador.ir
+    elevador.chamar(3)
+    elevador.chamar(4)
+    elevador.ir()
     # assert
     assert elevador.localizar() == 2
 
@@ -22,4 +22,3 @@ def test_elevador_2():
     elevador.ir()
     elevador.ir()
     assert elevador.localizar() == 0
-    
