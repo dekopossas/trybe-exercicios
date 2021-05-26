@@ -1,9 +1,9 @@
-from elevators.elevator import Elevator
-from elevators.terreo import TerreoElevador
+from elevators.elevador import Elevador
+from elevators.elevador_2 import TerreoElevador
 
 def test_elevador():
     # arrange
-    elevador = Elevator()
+    elevador = Elevador()
     # act
     elevador.chamar(2)
     elevador.chamar(2)
