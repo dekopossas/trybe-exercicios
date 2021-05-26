@@ -7,3 +7,4 @@ class TerreoElevador(Elevador):
             self._andar = 0
         else:
             super().ir() # metodo irado de falar q ta usando function base.
+            
