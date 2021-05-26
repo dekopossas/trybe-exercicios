@@ -10,11 +10,13 @@ class ElevadorBase:
     def chamar (self, andar):
         """adiciona o andar chamado na lista de chamados"""
         self._chamados.append(andar)
+
+        
     @abstractmethod
     def ir(self):
         pass
 
-    
+
 
 class Elevador:
     """Essa classe transforma uma variável em um elevador"""
