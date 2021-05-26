@@ -1,3 +1,5 @@
+from abc improt ABC, abstractmethod
+
 
 class Elevador:
     """Essa classe transforma uma variável em um elevador"""
