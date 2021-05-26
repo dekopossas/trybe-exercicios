@@ -22,7 +22,7 @@ class ElevadorBase:
 
 
 
-class Elevador:
+class Elevador(ElevadorBase):
     """Essa classe transforma uma variável em um elevador"""
     def __init__(self):
         self._andar = 0
