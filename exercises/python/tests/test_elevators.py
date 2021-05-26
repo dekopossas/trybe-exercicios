@@ -25,8 +25,7 @@ def test_elevador_2_acabou_chamados():
     elevador = TerreoElevador()
     # act
     elevador.chamar(2)
-    elevador.chamar(4)
-    elevador.ir()
     elevador.ir()
     elevador.ir()
     assert elevador.localizar() == 0
+    
