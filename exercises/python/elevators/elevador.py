@@ -3,6 +3,11 @@ from abc improt ABC, abstractmethod
 
 class ElevadorBase:
     """Essa classe transforma uma variável em um elevador"""
+    @abstractmethod
+    def ir(self):
+        pass
+
+
     def __init__(self):
         self._andar = 0
         self._chamados = []
@@ -10,11 +15,10 @@ class ElevadorBase:
     def chamar (self, andar):
         """adiciona o andar chamado na lista de chamados"""
         self._chamados.append(andar)
-
-        
-    @abstractmethod
-    def ir(self):
-        pass
+    
+    def localizar(self):
+    """ Indica o andar do elevador"""
+    return self._andar
 
 
 
