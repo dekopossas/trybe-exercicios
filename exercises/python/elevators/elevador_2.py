@@ -1,4 +1,4 @@
-from elevatoers.elevator import Elevator
+from elevatoers.elevator import Elevador
 
-class TerreoElevador(Elevator):
+class TerreoElevador(Elevador):
     pass
