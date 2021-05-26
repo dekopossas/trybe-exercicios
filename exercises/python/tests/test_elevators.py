@@ -12,7 +12,15 @@ def test_elevador():
     # assert
     assert elevador.localizar() == 2
 
-def test_elevador_2():
+def test_elevador_2_sem_chamados():
+    # arrange
+    elevador = TerreoElevador()
+    # act
+    elevador.ir()
+    # assert
+    assert elevador.localizar() == 0
+
+def test_elevador_2_acabou_chamados():
     # arrange
     elevador = TerreoElevador()
     # act
