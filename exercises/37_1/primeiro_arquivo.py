@@ -4,7 +4,3 @@ def sum_array(numbers):
             sum += number
 
     return sum
-
-resultado = sum_array(3)
-
-print(resultado)
