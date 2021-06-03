@@ -1,20 +1,20 @@
 numeros = [1, 2, 2, 6, 6, 6, 6, 7, 10]
 
 print(len(numeros))
+def numero_que_aparece_um_quarto(numeros):
+    contador = dict()
 
-contador = dict()
+    for numero in numeros:
+        contador[numero] = contador.get(numero, 0) + 1
 
-for numero in numeros:
-    contador[numero] = contador.get(numero, 0) + 1
+    print(contador)
 
-print(contador)
+    numero_mais_frequente = None
+    maior_contagem = 0
 
-numero_mais_frequente = None
-maior_contagem = 0
+    for numero, contagem in contador.item():
+        if contagem > maior_contagem:
+            numero_mais_frequente = numero
+            maior_contagem = contagem
 
-for numero, contagem in contador.item():
-    if contagem > maior_contagem:
-        numero_mais_frequente = numero
-        maior_contagem = contagem
-
-print(numero_mais_frequente)
+    return numero_mais_frequente
