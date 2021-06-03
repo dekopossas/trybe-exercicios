@@ -12,7 +12,7 @@ maior_contagem = 0
 
 for numero, contagem in contador.item():
     if contagem > maior_contagem:
-        maior_numero = numero
+        numero_mais_frequente = numero
         maior_contagem = contagem
 
 print(contador)
