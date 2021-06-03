@@ -7,6 +7,8 @@ contador = dict()
 for numero in numeros:
     contador[numero] = contador.get(numero, 0) + 1
 
+print(contador)
+
 numero_mais_frequente = None
 maior_contagem = 0
 
@@ -15,4 +17,4 @@ for numero, contagem in contador.item():
         numero_mais_frequente = numero
         maior_contagem = contagem
 
-print(contador)
+print(numero_mais_frequente)
