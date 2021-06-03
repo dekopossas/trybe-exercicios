@@ -7,6 +7,9 @@ contador = dict()
 for numero in numeros:
     contador[numero] = contador.get(numero, 0) + 1
 
+numero_mais_frequente = None
+maior_contagem = 0
+
 for numero, contagem in contador.item():
     if contagem > maior_contagem:
         maior_numero = numero
